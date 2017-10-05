@@ -13,21 +13,12 @@ double timetest(long LONG)
 	time_t begin = clock();
 	for (long i = 0; i <= LONG; i++)
 	{
-		if (i == LONG / 4)
-			cout << "25 %";
-		else if (i == LONG / 2)
-		{
-			//printf("\r");
-			cout << "\r" << "50 %";
-		}
-		else if (i == 3 * LONG / 4)
-			cout << "\r" << "75 %";
-		else if (i == LONG)
-			cout << "\r" << "100%" << endl;
+		cout << "\r" << 100 * i / LONG << "%";
 		for (long a = 0; a < LONG; a++);
 	}
+	cout << "          ";
 	time_t end = clock();
-	cout << "OK!";
+	cout << endl << "OK!";
 	time = end - begin;
 	cout << endl << "time:" << time / 1000.0 << "s";
 	return (time);
