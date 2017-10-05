@@ -1,11 +1,10 @@
-#include <stdio.h>
-#include <iostream>
-#include <time.h>
-#include <math.h>
+#include "LINK.h"
 
-using namespace std;
+#define TCTRL 99999
 
 void main()
 {
-	timetest();
+	timetest(TCTRL);
+	cout << endl << "Press any key to exit!" << endl;
+	getchar();
 }
