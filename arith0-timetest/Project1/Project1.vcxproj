@@ -112,6 +112,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="stringcmp.cpp" />
     <ClCompile Include="timetest.cpp" />
   </ItemGroup>
   <ItemGroup>
