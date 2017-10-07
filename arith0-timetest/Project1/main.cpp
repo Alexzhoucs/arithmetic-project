@@ -15,6 +15,7 @@ void main()
 	end = stringcmp(a, b);
 	cout << end;
 	getchar();
+
 	
 }
 
