@@ -7,3 +7,4 @@ using namespace std;
 
 double timetest(long);
 int stringcmp(char a[], char b[]);
+int randstr(long);
