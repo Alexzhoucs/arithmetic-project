@@ -26,10 +26,14 @@ void main()
 	k = randstr(n);
 	if (k == 1)
 		cout << "success!" << endl;
+	else if (k == 0)
+		cout << "cannot open the file 'input.txt'!" << endl;
 	else
 		cout << "ERROR!" << endl;
 	cout << endl << "Press any key to exit!" << endl;
 	getchar();
+
+	
 
 
 	
