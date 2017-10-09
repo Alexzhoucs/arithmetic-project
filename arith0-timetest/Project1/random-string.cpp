@@ -1,4 +1,4 @@
-//产生随机1~LENGTH字符串；共n个,由参数传入；储存到文件 input.txt;成功返回1否则0。
+//产生随机1~LENGTH字符串；共n个,由参数传入；储存到文件 input.txt;成功返回0否则错误代码。
 
 #include <string.h>
 #include <time.h>

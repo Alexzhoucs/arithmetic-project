@@ -1,7 +1,7 @@
 #include "LINK.h"
 
 #define TCTRL	99999
-#define CI		17		//控制元素个数的次数（2的幂次）
+#define CI		2		//控制元素个数的次数（2的幂次）
 
 void main()
 {
@@ -24,10 +24,10 @@ void main()
 	for (int i = 0; i < CI; i++)
 		n *= 2;
 	k = randstr(n);
-	if (k == 1)
+	if (k == 0)
 		cout << "success!" << endl;
-	else if (k == 0)
-		cout << "cannot open the file 'input.txt'!" << endl;
+	else if (k > 0)
+		cout << "cannot open the file 'input.txt'!" << endl << "ERROR  " << k;
 	else
 		cout << "ERROR!" << endl;
 	cout << endl << "Press any key to exit!" << endl;
