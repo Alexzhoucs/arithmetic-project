@@ -21,7 +21,7 @@ int randstr(long n)
 		return (err);
 	for (long j = 0; j < n; j++)
 	{
-		l = 1 + rand() % (LENGTH-1);
+		l = 1 + rand() % (LENGTH);
 		for (i = 0; i < l; i++)
 			a[i] = 97 + rand() % 26;
 		a[i] = '\0';
