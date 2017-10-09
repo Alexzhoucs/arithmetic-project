@@ -1,7 +1,7 @@
 #include "LINK.h"
 
 #define TCTRL	99999
-#define CI		17		//控制元素个数的次数（2的幂次）
+#define CI		2		//控制元素个数的次数（2的幂次）
 
 void main()
 {

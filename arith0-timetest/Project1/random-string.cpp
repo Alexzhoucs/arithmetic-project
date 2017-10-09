@@ -13,20 +13,25 @@ int randstr(long n)
 {
 	FILE *fp;
 	char a[LENGTH+1];			//∂‡“ªŒª°∞\0°±
-	char name[20] = "input17-3.txt";
+	char name[20] = "input02-*.txt";
 	int l, err, i;
 	srand((unsigned)time(NULL));
-	err = fopen_s(&fp, name, "w");
-	if (err != 0)
-		return (err);
-	for (long j = 0; j < n; j++)
+	for (int j = 1; j <= 3; j++)
 	{
-		l = 1 + (rand() % (LENGTH));
-		for (i = 0; i < l; i++)
-			a[i] = 97 + rand() % 26;
-		a[i] = '\0';
-		fprintf(fp, "%s \n", a);		
+		name[8] = j + 48;
+		err = fopen_s(&fp, name, "w");
+		if (err != 0)
+			return (err);
+		for (long j = 0; j < n; j++)
+		{
+			l = 1 + (rand() % (LENGTH));
+			for (i = 0; i < l; i++)
+				a[i] = 97 + rand() % 26;
+			a[i] = '\0';
+			fprintf(fp, "%s \n", a);
+		}
+		fclose(fp);
 	}
-	fclose(fp);
+	return(0);
 }
 
