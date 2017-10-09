@@ -13,9 +13,10 @@ int randstr(long n)
 {
 	FILE *fp;
 	char a[LENGTH];
+	char name[20] = "input17-3.txt";
 	int l, err, i;
 	srand((unsigned)time(NULL));
-	err = fopen_s(&fp,"input.txt", "w");
+	err = fopen_s(&fp, name, "w");
 	if (err != 0)
 		return (err);
 	for (long j = 0; j < n; j++)
