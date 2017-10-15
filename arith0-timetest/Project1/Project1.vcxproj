@@ -113,6 +113,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="merge.cpp" />
     <ClCompile Include="random-string.cpp" />
     <ClCompile Include="stringcmp.cpp" />
     <ClCompile Include="timetest.cpp" />

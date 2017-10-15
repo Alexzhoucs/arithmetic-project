@@ -39,7 +39,7 @@ void main()
 		cout << "cannot open the file 'input.txt'!" << endl << "ERROR  " << k;
 	else
 		cout << "ERROR!" << endl;
-	cout << endl << "Press any key to exit!" << endl;
+	cout << endl << "Press ENTER to exit!" << endl;
 	getchar();
 
 	
