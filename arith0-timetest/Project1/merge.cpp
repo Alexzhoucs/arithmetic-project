@@ -1,7 +1,12 @@
 //输入数组与排序起止下标，对数组进行排序，输出0为成功，1为失败。
+// long beging, long end, long middle
 
 int merge(char a[], long b, long e, long m)
 {
+	long n1, n2;
+	n1 = m - b + 1;
+	n2 = e - m;
+
 
 	return(0);
 }
