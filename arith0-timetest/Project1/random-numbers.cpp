@@ -8,12 +8,12 @@
 
 using namespace std;
 
-#define LENGTH 32
+#define LENGTH 5
 
 int randstr(long n)
 {
 	FILE *fp;
-	char a[LENGTH+1];			//∂‡“ªŒª°∞\0°±
+	int a = 0;		
 	char name[20] = "input17-*.txt";
 	int l, err, i, e = 10;
 	srand((unsigned)time(NULL));
@@ -33,9 +33,12 @@ int randstr(long n)
 			}
 			l = 1 + (rand() % (LENGTH));
 			for (i = 0; i < l; i++)
-				a[i] = 97 + rand() % 26;
-			a[i] = '\0';
-			fprintf(fp, "%s \n", a);
+				a = 10 * a + rand() % 10;
+			if (a < 0)
+				a = -a;
+			a = a % 65535;
+			fprintf(fp, "%d \n", a);
+
 		}
 		e = 10;
 		fclose(fp);
