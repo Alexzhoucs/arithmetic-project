@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //输入数组与排序起止下标，对数组进行排序，输出0为成功，1为失败。
 // long beging, long end, long middle
 
@@ -27,3 +28,6 @@ int mergesort(char a[], long b,long e)
 	else
 		return(0);
 }
+=======
+//输入数组与数组规模，对数组进行排序，输出0为成功，1为失败。
+>>>>>>> parent of fe639a7... merge0.0.1

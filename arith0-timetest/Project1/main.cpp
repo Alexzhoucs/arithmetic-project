@@ -19,7 +19,6 @@ void main()
 	getchar();
 	*/
 
-
 	double time;
 	long n = 1;
 	int k = 0;
