@@ -10,12 +10,13 @@ void main()
 
 	/*
 	int end;
-	char a[20] = "dddc", b[20] = "dddc";
+	string a = "aaa", b = "~";
 	end = stringcmp(a, b);
 	cout << end;
 	getchar();
+	
 	*/
-
+	/*
 	double time;
 	long n = 1;
 	int k = 0;
@@ -39,7 +40,7 @@ void main()
 	cout << endl << "Press ENTER to exit!" << endl;
 	getchar();
 
-	
+	*/
 
 
 	

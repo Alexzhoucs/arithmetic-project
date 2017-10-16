@@ -1,4 +1,4 @@
-// 按长短优先；字母顺序次之的要求（不区分大小写）;返回整形0/+-1
+// 按长短优先；字母顺序次之的要求（不区分大小写）;返回整形0/+-1;后者大为1
 
 #include "LINK.h"
 
@@ -27,17 +27,15 @@ int stringcmp(string a,string b)
 	else
 		return(strcmp(a, b));*/
 	if (a.length() < b.length())
-		return (-1);
-	else if (a.length() < b.length())
 		return (1);
+	else if (a.length() > b.length())
+		return (-1);
 	else
-	{
-		if (a < b)
-			return (-1);
-		else if (a > b)
-			return (1);
-		else
-			return (0);
-	}
+		return(strcmp(b.c_str(), a.c_str()));	
+	
+
+
+
+
 }
 

@@ -5,21 +5,29 @@
 
 int merge(string a[], long b, long e, long m)
 {
+	long i, j, k;
 	long n1, n2;
 	string l[131072], r[131072];
 	n1 = m - b + 1;
 	n2 = e - m;
-	for (int i = 0; i < n1; i++)
+
+	if (n1 < 0 || n2 < 0)
+		return(1);
+
+	for (i = 0; i < n1; i++)
 		l[i] = a[b + i];
-	for (int i = 0; i < n2; i++)
+	for (i = 0; i < n2; i++)
 		r[i] = a[m + i];
-	
-
-
-
-
-
-	//return(0);
+	l[n1] = r[n2] = "~";
+	i = j = 0;
+	for (k = b; k < e; k++)
+	{
+		if (stringcmp(l[i], r[j]) == -1)
+			a[k] = l[i++];
+		else
+			a[k] = r[j++];
+	}
+	return(0);
 }
 
 
