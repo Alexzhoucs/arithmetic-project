@@ -7,11 +7,11 @@ int merge(string a[], long b, long e, long m)
 {
 	long i, j, k;
 	long n1, n2;
-	string l[131072], r[131072];
+	string l[QUANTITY], r[QUANTITY];
 	n1 = m - b + 1;
 	n2 = e - m;
 
-	if (n1 < 0 || n2 < 0)
+	if (n1 < 0 || n2 < 0)			//¼ì²â±¨´í
 		return(1);
 
 	for (i = 0; i < n1; i++)

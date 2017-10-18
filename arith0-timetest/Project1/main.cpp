@@ -42,7 +42,10 @@ void main()
 
 	*/
 
-
+	FILE *fp;
+	string a[QUANTITY];
+	int i;
+	
 	
 }
 
