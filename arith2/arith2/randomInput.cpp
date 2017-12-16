@@ -7,7 +7,7 @@ int randomInput(int n)
 	int r;
 	int err = 0;
 	FILE *fp;
-	char name[10] = "input.txt";
+	char name[20] = "input.txt";
 	srand((unsigned)time(NULL));
 	err = fopen_s(&fp, name, "w");
 	if (err != 0)
@@ -15,7 +15,7 @@ int randomInput(int n)
 	for (int i = 0; i < n; i++)
 	{
 		r = rand();
-		fprintf(fp, "%d  \n", r);
+		fprintf(fp, "%d\n", r);
 	}
 	fclose(fp);
 	return(0);

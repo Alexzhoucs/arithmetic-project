@@ -1,8 +1,25 @@
-//数组a存放连续相乘的数组规模
+//n为矩阵个数；
 
 #include "link.h"
 
-int randomMatrix(int a[])
+int randomMatrix(int n)
 {
-	return(0);
+	FILE *fp;
+	int static p[MAX + 1];
+	int err;
+	char name[20] = "input.txt";
+	err = fopen_s(&fp, name, "w");
+	if (err != 0)
+		return (err);
+	for (int i = 0; i <= n; i++)
+	{
+		
+	}
+		if (err = fscanf_s(fp, "%d", &p[i]))
+			cout << "error " << err << endl;
+	for (int i = 0; i < n; i++)
+	{
+		 
+	}
+	
 }
