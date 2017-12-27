@@ -8,13 +8,6 @@
 
 using namespace std;
 
-int randomNumber(int n, int a[]);
-int found(int n, int a[], node* NIL);  
-int insert(node* NIL, int a);
-int insertFix(node* NIL, node* r);
-int leftRotate(node* NIL, node* p);
-int rightRotate(node* NIL, node* r);
-
 
 struct node 
 {
@@ -24,3 +17,11 @@ struct node
 	node *r;
 	node *p;
 };
+
+
+int randomNumber(int n, int a[]);
+int found(int n, int a[], node* NIL);  
+int insert(node* NIL, int a);
+int insertFix(node* NIL, node* r);
+int leftRotate(node* NIL, node* p);
+int rightRotate(node* NIL, node* r);

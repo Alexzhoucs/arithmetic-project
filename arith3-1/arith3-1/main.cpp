@@ -7,6 +7,7 @@ int main()
 	int num[MAX + 1];
 	for (int i = 0; i < 5; i++)
 	{
+		NIL.key = 0;
 		NIL.l = NIL.r = NIL.p = NULL;
 		NIL.color = BLACK;
 		if (randomNumber(a[i], num))
